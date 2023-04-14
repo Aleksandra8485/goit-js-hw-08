@@ -33,4 +33,11 @@ galleryEl.addEventListener('click', event => {
   instance.show();
 });
 
+const lightbox = new SimpleLightbox('.gallery li a', {
+  captions: true,
+  captionsData: 'alt',
+  captionDelay: 250,
+  captionPosition: 'bottom',
+});
+
 console.log(galleryItems);
