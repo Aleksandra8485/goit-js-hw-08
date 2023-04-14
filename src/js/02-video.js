@@ -1,7 +1,7 @@
 import Player from '@vimeo/player';
 
 //instalacja lodash.trottle
-import throttle from 'lodash.trottle';
+import _ from 'lodash';
 
 //tworzę nowy obiekt new Player(odtwarzacz wideo)przypisany do zmiennej player.
 //Właściwość 'vimeo-player' = id w HTML.
