@@ -1,14 +1,17 @@
 import Player from '@vimeo/player';
-import throttle from 'lodash';
+
+//instalacja lodash.trottle
+import throttle from 'lodash.trottle';
 
 //tworzę nowy obiekt new Player(odtwarzacz wideo)przypisany do zmiennej player.
-//Właściwość 'vimeo-player' odnosi się do wartości id w HTML.
+//Właściwość 'vimeo-player' = id w HTML.
 const player = new Player('vimeo-player');
 
 //kod zapisujący czas odtwarzania w local storage
 // player.on('timeupdate', () => {
 //   localStorage.setItem('videoplayer-current-time', player.currentTime());
 // });
+
 player.on(
   'timeupdate',
   _.throttle(function (data) {
